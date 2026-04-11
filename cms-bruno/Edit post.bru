@@ -1,0 +1,19 @@
+meta {
+  name: Edit post
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{baseUrl}}/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "question": "Who is the prime minister of Finland?",
+    "answer": "Petteri Orpo",
+    "keywords": ["finland"]
+  }
+}
